@@ -3,11 +3,11 @@ import { Route, Routes } from 'react-router-dom'
 import ProductList from './components/ProductList'
 import Cart from './pages/Cart'
 
-function AppRoutes({cart,addToCart}) {
+function AppRoutes({cart,addToCart,removeToCart}) {
   return (
     <Routes>
         <Route path='/' element={<ProductList addToCart={addToCart}/>}/>
-        <Route path='/cart' element={<Cart cartItems={cart}/>}/>
+        <Route path='/cart' element={<Cart cartItems={cart} removeCart={removeToCart}/>}/>
     </Routes>
   )
 }
