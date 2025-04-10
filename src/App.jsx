@@ -30,9 +30,10 @@ function App() {
   }
 
   return <>
-  <Navbar cartCount={cart.length} />
+  <Navbar cartCount={cart.length} cart={cart}  removeToCart={removeCart}/>
   {/* <ProductList addToCart={addToCart}/> */}
-  <AppRoutes cart={cart} addToCart={addToCart} removeToCart={removeCart} />
+  {/* <AppRoutes cart={cart} addToCart={addToCart} removeToCart={removeCart} /> */}
+  <AppRoutes  addToCart={addToCart}  />
 
   </>
 }
