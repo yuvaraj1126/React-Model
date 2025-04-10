@@ -7,7 +7,7 @@ function Navbar({cartCount,cart,removeToCart}) {
     return(
         <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
             <h1 className='text-xl font-bold'>Product-Uv</h1>
-            <div className="space-x-6">
+            <div className="space-x-6 flex">
                 <Link to="/" className="hover:underline">Home</Link>
                 <div className="hover:underline" onClick={()=> setIscart(true)}>
                 Cart ({cartCount})
